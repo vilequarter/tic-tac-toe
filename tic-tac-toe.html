@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=B612 Mono' rel='stylesheet'>
+
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+
+        <div class="container" id="main">
+            <div class="row justify-content-center">
+                <h1>Tic Tac Toe</h1>
+            </div>
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-primary" id="newGame">New Game</button>
+            </div>
+            <div class="row justify-content-center mt-2">
+                <div class="col-md-auto">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="choosePlayer">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="player" id="playAsX" autocomplete="off" checked>Play as X
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="player" id="playAsO" autocomplete="off">Play as O
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <button type="button" class="btn btn-success" id="startGame">Start</button>
+                </div>
+            </div>
+
+            <div class="container mt-4" id="boardGrid" style="width:600px; height:600px">
+                <div class="row no-gutters" id="row1">
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box0"><img src=></button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box1"><img src=></button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box2"><img src=></button>
+                    </div>
+                </div>
+                <div class="row justify-content-center no-gutters" id="row2">
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box3"><img src=></button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box4"><img src=></button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box5"><img src=></button>
+                    </div>
+                </div>
+                <div class="row justify-content-center no-gutters" id="row3">
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box6"><img src=></button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box7"><img src=></button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn grid-button" id="box8"><img src=></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4" id="board">
+                <img src="images/Tic-tac-toe-green.png">
+            </div>
+
+
+
+            
+            <div class="row justify-content-center mt-3" id="taunt"></div>
+            <div class="row justify-content-center mt-3" id="stats">
+                <div class="col-md-auto">
+                    Your Wins: <div id="wins">0</div>
+                </div>
+                <div class="col-md-auto">
+                    Your Losses: <div id="losses">0</div>
+                </div>
+                <div class="col-md-auto">
+                    Your Draws: <div id="draws">0</div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-2">
+                <button type="button" class="btn btn-danger" id="clearData">Clear Data</button>
+            </div>
+
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="main.js" type="text/javascript"></script>
+    
+    </body>
+
+</html>

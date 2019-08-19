@@ -1,0 +1,33 @@
+.grid-button {
+    width:200px;
+    height:200px;
+
+}
+
+#boardGrid {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0;
+    padding-right: 0;
+}
+
+#taunt {
+    font-family: 'B612 Mono';
+    color:rgb(102, 255, 102);
+}
+
+body {
+    background-color: rgb(40,40,40);
+    font-family: 'B612 Mono'
+}
+
+h1 {
+    color:rgb(102, 255, 102);
+}
+
+#stats {
+    color:rgb(102, 255, 102);
+}
